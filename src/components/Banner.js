@@ -1,7 +1,7 @@
 import React from "react";
-import '../styles/main.css';
 
-export default function BannerImage({ children, imageUrl, marginTop, marginBottom, height }) {
+
+export default function Banner({ children, imageUrl, marginTop, marginBottom, height }) {
 
     // Bannière variable selon les pages
     const bannerStyle = {

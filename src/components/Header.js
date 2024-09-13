@@ -1,6 +1,6 @@
-import '../styles/main.css';
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../assets/logo.svg';
+import '../styles/main.scss';
 
 
 export default function Header() {

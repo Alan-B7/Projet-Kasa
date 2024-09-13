@@ -1,0 +1,46 @@
+.collapse {
+    border-radius: 5px;
+    background-color: #FF6060;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: all 0.3s;
+    width: 85%;
+    margin: 0 auto 20px auto;
+  
+    &__header {
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #FFF;
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+  
+    &__title {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  
+    &__icon {
+      font-size: 20px;
+      transition: transform 0.3s ease;
+    }
+  
+    &__icon.rotate {
+      transform: rotate(-180deg);
+    }
+  
+    &__content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+  
+      &.is-open {
+        max-height: 1000px; /* Large valeur pour permettre l'animation */
+        padding: 10px;
+        background-color: #F6F6F6;
+        color: black;
+      }
+    }
+  }

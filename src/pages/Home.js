@@ -1,8 +1,8 @@
-import '../styles/main.css';
 import { Link } from 'react-router-dom';
 import Banner from '../components/Banner';
 import housingData from '../datas/logements.json';
 import plage from '../assets/plage.jpg';
+import Card from '../components/Card';
 
 /**
 * Page d'accueil
@@ -21,9 +21,10 @@ export default function home() {
             </Banner>
 
             <div className='home__gallery'>
-                {/* Parcours de des données pour afficher les logements */}
+                {/* Parcours des données pour afficher les logements */}
                 {housingData.map((housing) => (
                     <Link to={`/logement/${housing.id}`} key={housing.id}>
+                        <Card housing={housing} />
                     </Link>
                 ))}
             </div>
