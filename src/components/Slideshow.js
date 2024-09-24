@@ -6,7 +6,7 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 
 export default function Carousel({ images }) {
 
-    // État pour gérer l'index de la diapositive actuelle
+    // State pour gérer l'index de la diapositive actuelle
     const [currentSlide, setCurrentSlide] = useState(0);
     const totalSlides = images.length;
 
